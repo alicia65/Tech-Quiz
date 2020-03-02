@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rdoTrue = new System.Windows.Forms.RadioButton();
             this.rdoFalse = new System.Windows.Forms.RadioButton();
+            this.rdoTrue = new System.Windows.Forms.RadioButton();
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.btnCheckAnswer = new System.Windows.Forms.Button();
             this.lblScore = new System.Windows.Forms.Label();
@@ -46,16 +46,6 @@
             this.panel1.Size = new System.Drawing.Size(357, 65);
             this.panel1.TabIndex = 0;
             // 
-            // rdoTrue
-            // 
-            this.rdoTrue.Location = new System.Drawing.Point(26, 3);
-            this.rdoTrue.Name = "rdoTrue";
-            this.rdoTrue.Size = new System.Drawing.Size(104, 24);
-            this.rdoTrue.TabIndex = 0;
-            this.rdoTrue.TabStop = true;
-            this.rdoTrue.Text = "True";
-            this.rdoTrue.UseVisualStyleBackColor = true;
-            // 
             // rdoFalse
             // 
             this.rdoFalse.Location = new System.Drawing.Point(26, 38);
@@ -65,6 +55,16 @@
             this.rdoFalse.TabStop = true;
             this.rdoFalse.Text = "False";
             this.rdoFalse.UseVisualStyleBackColor = true;
+            // 
+            // rdoTrue
+            // 
+            this.rdoTrue.Location = new System.Drawing.Point(26, 3);
+            this.rdoTrue.Name = "rdoTrue";
+            this.rdoTrue.Size = new System.Drawing.Size(104, 24);
+            this.rdoTrue.TabIndex = 0;
+            this.rdoTrue.TabStop = true;
+            this.rdoTrue.Text = "True";
+            this.rdoTrue.UseVisualStyleBackColor = true;
             // 
             // txtQuestion
             // 
@@ -82,6 +82,7 @@
             this.btnCheckAnswer.TabIndex = 3;
             this.btnCheckAnswer.Text = "Check answer";
             this.btnCheckAnswer.UseVisualStyleBackColor = true;
+            this.btnCheckAnswer.Click += new System.EventHandler(this.btnCheckAnswer_Click);
             // 
             // lblScore
             // 
