@@ -84,11 +84,13 @@ namespace Tech_Quiz
                 if (correctAnswer == true && rdoTrue.Checked == true)
                 {
                     Score++;
+                    MessageBox.Show($"Correct answer is: {correctAnswer}", "Correct Answer");//display corrected answers
                 }
 
                 if (correctAnswer == false && rdoFalse.Checked == true)
                 {
                     Score++;
+                    MessageBox.Show($"Wrong answer is: {correctAnswer}", "Wrong Answer");//display incorrected answers
                 }
 
                 lblScore.Text = $"Score: {Score}";
